@@ -5,7 +5,7 @@ RPC(Remote Procedure Call Protocol)远程过程调用协议。 一个通俗的�
 
 ## 开始
 本文只实现一个rpc框架基本的功能，不对性能做保证，因此尽量使用go原生自带的net/json库等进行操作，对使用方面不做stub（偷懒，只使用简单的json格式指定需要调用的方法），用最简单的方式实现一个简易rpc框架，也不保证超时调用和服务发现等集成的逻辑，[服务发现可以参考下文]（https://juejin.cn/post/7172818468415209508）
-
+本文代码地址(https://github.com/wuhuZhao/rpc_demo)
 ### 实现两点之间的通讯(transport)
 本段先实现两端之间的通讯，只确保两个端之间能互相通讯即可
 `server.go`
